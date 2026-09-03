@@ -7,14 +7,17 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Скрипты SQL Server1"
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Big baby types", "Big baby types\Big baby types.ssmssqlproj", "{CFBE0D51-2B86-4423-96E1-ABDB719E4EFA}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Таблицы", "Таблицы\Таблицы.ssmssqlproj", "{23B9A3E5-0080-40DA-B046-73A50AA646BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D3D0C281-7725-4A05-BA38-139900100AD1}.Default|Default.ActiveCfg = Default
-		{C967533E-C4C9-4445-9D94-6A6A721EE74C}.Default|Default.ActiveCfg = Default
 		{CFBE0D51-2B86-4423-96E1-ABDB719E4EFA}.Default|Default.ActiveCfg = Default
+		{21D20E40-611B-4F61-862C-731AAC185F0F}.Default|Default.ActiveCfg = Default
+		{23B9A3E5-0080-40DA-B046-73A50AA646BA}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
