@@ -1,0 +1,5 @@
+USE DB1
+go
+
+CREATE DATABASE DB3 
+go
