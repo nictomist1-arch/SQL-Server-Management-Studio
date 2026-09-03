@@ -1,4 +1,4 @@
- USE DB1
+ USE DB3
  
  CREATE TABLE users3(
 	id int Primary Key Identity(1, 1),
