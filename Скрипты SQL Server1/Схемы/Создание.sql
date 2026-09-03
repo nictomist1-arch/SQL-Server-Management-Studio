@@ -1,8 +1,8 @@
 USE DB2
 go
---CREATE SCHEMA clients
+--CREATE SCHEMA departament
 --go 
---CREATE SCHEMA customersrr
+--CREATE SCHEMA customers
 --go
 --CREATE TABLE clients.person(id int, name varchar(100))
 
