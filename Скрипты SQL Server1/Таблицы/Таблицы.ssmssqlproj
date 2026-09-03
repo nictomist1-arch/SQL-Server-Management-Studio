@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="Изменение.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:COMP11A1\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>COMP11A1\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Изменение.sql</FullPath>
+        </FileNode>
         <FileNode Name="Наполнение.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:COMP11A1\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>COMP11A1\SQLEXPRESS</AssociatedConnSrvName>
