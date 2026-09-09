@@ -1,7 +1,8 @@
-DECLARE @num int = 10
+DECLARE @char char(5) = 'dddddddd'
+DECLARE @char2 nchar(10) = 'текст на русском'
+DECLARE @vchar varchar(5000) = 'dadasaasda'
+DECLARE @text text = 'sdsdasfasdvzcxzas'
 
-SELECT @num AS number
-
-DECLARE @bit bit = 1;
-
-SELECT @bit AS flag
+SELECT *
+FROM sys.databases
+PRINT @vchar
