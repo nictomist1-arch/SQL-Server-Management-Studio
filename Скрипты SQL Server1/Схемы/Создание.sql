@@ -1,10 +1,12 @@
 USE DB2
-go
+GO
+
 --CREATE SCHEMA departament
---go 
+--GO
 --CREATE SCHEMA customers
---go
+--GO
 --CREATE TABLE clients.person(id int, name varchar(100))
 
-ALTER SCHEMA customers
-	TRANSFER departament.person
+IF OBJECT_ID(N'clients.person', N'U') IS NOT NULL
+	ALTER SCHEMA customers TRANSFER clients.person
+GO

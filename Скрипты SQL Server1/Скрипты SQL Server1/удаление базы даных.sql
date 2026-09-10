@@ -1,1 +1,5 @@
-DROP Database DB
+USE master
+GO
+
+DROP DATABASE IF EXISTS DB3
+GO
