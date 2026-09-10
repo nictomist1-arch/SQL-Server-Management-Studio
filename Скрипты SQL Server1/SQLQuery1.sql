@@ -1,18 +1,14 @@
 USE DB4
 GO
 
-------------------------------------------------------------
 -- 1. Создать 2 схемы: Persons, Products
-------------------------------------------------------------
 CREATE SCHEMA Persons
 GO
 
 CREATE SCHEMA Products
 GO
 
-------------------------------------------------------------
 -- 2. В схеме Persons создать 2 таблицы с id NULL и +4 поля
-------------------------------------------------------------
 CREATE TABLE Persons.clients(
 	id int NULL,
 	first_name nvarchar(50) NULL,
@@ -31,11 +27,7 @@ CREATE TABLE Persons.employees(
 )
 GO
 
-------------------------------------------------------------
 -- 3. Исправить id NULL на id PRIMARY KEY IDENTITY
---    (в SQL Server IDENTITY нельзя просто ALTER COLUMN —
---     удаляем старый id и добавляем новый)
-------------------------------------------------------------
 ALTER TABLE Persons.clients
 	DROP COLUMN id
 GO
@@ -52,10 +44,8 @@ ALTER TABLE Persons.employees
 	ADD id int IDENTITY(1, 1) NOT NULL PRIMARY KEY
 GO
 
-------------------------------------------------------------
 -- 4. В схеме Products создать 2 таблицы
 --    с id PRIMARY KEY IDENTITY и +2 поля
-------------------------------------------------------------
 CREATE TABLE Products.goods(
 	id int IDENTITY(1, 1) NOT NULL PRIMARY KEY,
 	title nvarchar(100) NOT NULL,
@@ -70,7 +60,7 @@ CREATE TABLE Products.categories(
 )
 GO
 
--- Тестовые данные, чтобы при переносе было что переносить
+-- Тестовые данные
 INSERT INTO Products.goods(title, price)
 VALUES (N'Ноутбук', 75000),
 	   (N'Мышь', 1500)
@@ -81,9 +71,7 @@ VALUES (N'Электроника', N'Техника и гаджеты'),
 	   (N'Аксессуары', N'Периферия и доп. товары')
 GO
 
-------------------------------------------------------------
 -- 5. Перенести таблицы из Products в Persons со всеми данными
-------------------------------------------------------------
 ALTER SCHEMA Persons TRANSFER Products.goods
 GO
 

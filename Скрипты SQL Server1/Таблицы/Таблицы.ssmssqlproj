@@ -19,12 +19,6 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:COMP11A1\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>COMP11A1\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
-        </FileNode>
         <FileNode Name="Дефолт.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:COMP11A1\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>COMP11A1\SQLEXPRESS</AssociatedConnSrvName>
@@ -48,6 +42,12 @@
           <AssociatedConnSrvName>COMP11A1\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Создание таблиц.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Хихихиха.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:COMP11A1\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>COMP11A1\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Хихихиха.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
