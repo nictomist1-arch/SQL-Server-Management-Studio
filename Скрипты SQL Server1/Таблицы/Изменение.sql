@@ -1,4 +1,0 @@
-USE DB1
-
-ALTER TABLE users
-ALTER COLUMN adress nchar(100)

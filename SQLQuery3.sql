@@ -1,14 +1,13 @@
-USE [DB4]
+USE Data_Base_4
 GO
 
-CREATE TABLE profucts(
-	[id] [int] Primary Key Identity(1,1)NOT NULL,
+CREATE TABLE [dbo].[products](
+	[id] [int] Primary Key Identity(1, 1) NOT NULL,
 	[name] [nvarchar](50) NOT NULL,
-	[coast] [real] NOT NULL,
+	[price] [real] NULL,
+	[create_date] [datetime] NOT NULL,
 	[id_user] [int] NOT NULL,
-	[create_data] [datetime] NOT NULL,
 	CONSTRAINT FK_idusers FOREIGN KEY (id_user)
 		REFERENCES users(id) ON DELETE CASCADE
-
-) ON [PRIMARY]
+)
 GO
