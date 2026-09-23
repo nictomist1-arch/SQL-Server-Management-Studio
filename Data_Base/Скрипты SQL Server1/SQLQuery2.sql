@@ -37,7 +37,6 @@ CREATE CLUSTERED INDEX cl_index
 	ON orders2(id);
 GO
 
--- Point lookup by id (clustered index seek)
 DECLARE @search_id UNIQUEIDENTIFIER =
 (
 	SELECT TOP (1) id FROM orders2 ORDER BY price
